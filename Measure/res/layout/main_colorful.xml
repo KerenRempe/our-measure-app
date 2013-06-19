@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/osx_hero"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <Button
+                    android:id="@+id/bt_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#5CF3F1"
+                    android:text="length"
+                    android:textColor="#00D1D1"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/bt_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#FEFD56"
+                    android:text="angle"
+                    android:textColor="#D9D94D"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <Button
+                    android:id="@+id/bt_gradienter"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#FF5B5D"
+                    android:text="水平仪"
+                    android:textColor="#DC4245"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/bt_radiation"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#00ED84"
+                    android:text="radiation"
+                    android:textColor="#00873F"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#FF8CAC"
+                    android:text="temp0"
+                    android:textColor="#E47B98"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_weight="0.28"
+                    android:background="#51AEF3"
+                    android:text="temp1"
+                    android:textColor="#296DC0"
+                    android:textSize="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
