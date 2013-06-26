@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <drawable name="length_home2">#9CD4D0</drawable>  
+    <drawable name="length_home1">#1d9eb2</drawable>  
+    <drawable name="length_help1">#97bdfd</drawable>  
+    <drawable name="length_help2">#518af8</drawable>  
+        <drawable name="background">#F8F7F2</drawable>  
+    
+          <drawable name="angle_home1">#ff691e</drawable>       
+       <drawable name="angle_home2">#ffcc66</drawable>       
+        <drawable name="angle_help1">#f38b00</drawable>       
+         <drawable name="angle_help2">#ffcc8c</drawable>    
+        
+         
+              <drawable name="light_home1">#ac3874</drawable>       
+       <drawable name="light_home2">#d68bb3</drawable>       
+        <drawable name="light_help1">#fc8a8a</drawable>       
+         <drawable name="light_help2">#ffcccc</drawable>  
+        
+        
+        <drawable name="compass_home1">#8BB351</drawable>       
+       <drawable name="compass_home2">#cce099</drawable>       
+        <drawable name="compass_help1">#C7E951</drawable>       
+         <drawable name="compass_help2">#dcf1a2</drawable> 
+         
+          <drawable name="level_home1">#009940</drawable>       
+       <drawable name="level_home2">#99cc99</drawable> 
+         
+         
+</resources>

@@ -1,16 +1,72 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
-    tools:context=".LevelActivity" >
+    android:background="#f8f7f2"
+    android:orientation="vertical" >
 
-    <com.measure.view.GradienterView
-        android:orientation="vertical"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_below" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/level_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/button1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/bt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            
+            android:background="@drawable/home_level"
+            android:text="Home"
+            android:textColor="#ffffff" />
+
+     
+    </LinearLayout>
+ <com.measure.view.GradienterView
+        android:id="@+id/gradienterView"
         android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:background="@drawable/gradienter_bg"
-		android:id="@+id/gradienterView">
-	</com.measure.view.GradienterView>
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </com.measure.view.GradienterView>
+   
 
 </RelativeLayout>

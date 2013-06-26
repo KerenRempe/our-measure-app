@@ -48,25 +48,46 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/measure"
+        android:icon="@drawable/icon1"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.measure.Measure"
-            android:label="@string/app_name" >
+            android:name="com.measure.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.measure.Length" >
+        <activity
+            android:name="com.measure.Length"
+            android:screenOrientation="nosensor" >
         </activity>
-        <activity android:name="com.measure.Angle" >
+        <activity
+            android:name="com.measure.Angle"
+            android:screenOrientation="nosensor" >
         </activity>
-        <activity android:name="com.measure.Radiation" >
+        <activity
+            android:name="com.measure.Radiation"
+            android:screenOrientation="nosensor" >
         </activity>
-        <activity android:name="com.measure.Gradienter" >
+        <activity
+            android:name="com.measure.Gradienter"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.measure.Compass"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.measure.Light"
+            android:screenOrientation="nosensor" >
+        </activity>
+         <activity
+            android:name="com.measure.AngleSelect"
+            android:screenOrientation="nosensor" >
         </activity>
     </application>
 
