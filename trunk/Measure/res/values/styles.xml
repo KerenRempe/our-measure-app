@@ -1,5 +1,11 @@
 <resources>
 
+    <style name="mypopwindow_anim_style">
+
+  <item name="android:windowEnterAnimation">@anim/popshow_anim</item>        <!-- 指定显示的动画xml  -->
+   <item name="android:windowExitAnimation">@anim/exit</item>   
+    </style>
+
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.

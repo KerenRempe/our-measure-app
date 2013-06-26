@@ -1,6 +1,7 @@
 package com.measure.view;
 
 import com.measure.R;
+import com.measure.R.drawable;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,6 +14,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -31,12 +33,12 @@ public class GradienterView extends View {
 	
 	//�������ε�λ������
 	
-	public int shang1_X = 10; //����Ĵ����ͼ
-	public int shang1_Y = 40;
+	public int shang1_X = 70; //����Ĵ����ͼ
+	public int shang1_Y = 80;
 	public int zuo1_X = 10; //����Ĵ����ͼ
 	public int zuo1_Y = 140;
 	public int zhong1_X = 100; //�м�Ĵ�Բͼ
-	public int zhong1_Y = 120;
+	public int zhong1_Y = 150;
 	public int shang2_X; //���������XY ���
 	public int shang2_Y;
 	public int zuo2_X; //����ͼ������XY ���
@@ -48,7 +50,6 @@ public class GradienterView extends View {
 		super(context, attrs);
 		initBitmap(); //��ʼ��ͼƬ��Դ
 		initLocation(); //��ʼ�����ݵ�λ��
-		setBackgroundResource(R.drawable.gradienter_bg);
 	}
 
 	private void initBitmap(){ //��ʼ��ͼƬ�ķ���
@@ -59,7 +60,7 @@ public class GradienterView extends View {
 		zuoBitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.level_left_bubble);
 		zhongBitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.level_mid);
 		zhongBitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.level_mid_bubble);
-		background = BitmapFactory.decodeResource(getResources(), R.drawable.osx_hero);
+	
 	}
 
 	private void initLocation(){ //��ʼ������λ�õķ���
@@ -78,8 +79,8 @@ public class GradienterView extends View {
 		
 		//�ô�ʡ���˲��ִ��룬���ں�����н���
 		//canvas.drawBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.gradienter_bg), 0,0, paint);
-		canvas.drawColor(Color.WHITE); //���ñ���ɫΪ��ɫ
-		canvas.drawBitmap(background, 0, 0, paint);
+		canvas.drawColor(0xf8f7f2); //���ñ���ɫΪ��ɫ
+		
 		paint.setColor(Color.BLUE); //���û�����ɫ
 		paint.setStyle(Style.STROKE); //���û���Ϊ�����
 		//canvas.drawRect(5, 5, 200, 200, paint);//������߿����

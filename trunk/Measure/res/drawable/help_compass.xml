@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <!-- 定义当button 处于pressed 状态时的形态。 -->
+
+<color android:color="@drawable/compass_help2" />
+    </item>
+    <item android:state_focused="true">
+        <!-- 定义当button获得focus时的形态 -->
+
+<color android:color="@drawable/compass_help2" />
+    </item>
+    <item android:state_focused="false" android:state_pressed="false">
+        <color android:color="@drawable/compass_help1" />
+    </item>
+
+</selector>
